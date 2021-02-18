@@ -2,5 +2,6 @@
     "username": "john.doe",
     "password": "john1234",
     "odoo_login_link": "john.ulala.com",
-    "odoo_attendance_link": "john.ulala.com/kisuekta"
+    "odoo_attendance_link": "john.ulala.com/kisuekta",
+    "chrome_driver_full_path": "/home/you/foo/bar/chromedriver"
 }

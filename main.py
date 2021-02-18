@@ -38,9 +38,9 @@ def main():
     password = credentials['password']
     odoo_login_link = credentials['odoo_login_link']
     odoo_attendance_link = credentials['odoo_attendance_link']
+    chrome_driver_full_path = credentials['chrome_driver_full_path']
 
-    driver = webdriver.Chrome(
-        '/Users/shuhan/research/odoo_auto_attendance/chromedriver')  # Optional argument, if not specified will search path.
+    driver = webdriver.Chrome(chrome_driver_full_path)  # Optional argument, if not specified will search path.
 
     login_to_oddo(driver=driver, odoo_login_link=odoo_login_link, username=username, password=password)
 

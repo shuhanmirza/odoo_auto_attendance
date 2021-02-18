@@ -1,8 +1,6 @@
 # odoo_auto_attendance
-Is your HR forcing you to check-in and check-out regularly and you are forgetting this every time?  
-I built this out of boredom.
 ## overview
-It's a simple selenium automation implementation. It logs in your account. Then goes to to attendance url and gives attendance.
+It's a simple selenium automation implementation. It logs in your account. Then goes to to attendance url and gives attendance and takes a screenshot.
 
 ## Prerequisites
 - You will need have Python3
@@ -19,20 +17,16 @@ your_pc$ source venv/bin/activate
 - Have chrome installed
 - I used chromedriver for mac.
 - download link https://chromedriver.chromium.org/downloads
-- Rename env_sample.json to env.json and configure it with your username,password and target's username
+- Rename env_sample.json to env.json and configure it with your username, password, links and path.
 
 ## Running
-You will need to add PATH for geckodriver
-```console
-(venv)your_pc$ export PATH=$PATH:.
-```
 ```console
 (venv)your_pc$ python main.py
 ```
 
 ## Process Steps of the bot
-- goes to facebook.com
+- goes to odoo_link
 - logs in to your account
-- goes to targets's timeline
-- selects latest post
-- starts commenting random letters
+- goes to attendance_url
+- clicks to to give attendance
+- takes a screenshot
